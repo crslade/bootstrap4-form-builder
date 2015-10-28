@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.version     = Bootstrap4FormBuilder::VERSION
   s.authors     = ["Christopher Slade"]
   s.email       = ["crslade@gmail.com"]
-  s.homepage    = "TODO"
+  s.homepage    = "https://github.com/crslade/bootstrap4-form-builder"
   s.summary     = "Rails form builder that makes it easy to create forms using Twitter Bootstrap 4+"
   s.description = "Bootstrap Form Builder is a rails form builder that generates the appropriate HTML to be able to quickly create forms using Twitter Bootstrap 4+"
   s.license     = "MIT"

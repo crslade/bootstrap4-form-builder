@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    bootstrap4_form_builder (0.0.1.alpha)
+    bootstrap4_form_builder (0.0.1)
       rails (~> 4.2.4)
 
 GEM
