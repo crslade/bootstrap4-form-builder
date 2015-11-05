@@ -1,4 +1,5 @@
-# Rails Bootstrap Form Builder
+[![Build Status](https://travis-ci.org/crslade/bootstrap4-form-builder.svg?branch=master)](https://travis-ci.org/crslade/bootstrap4-form-builder.svg?branch=master)
+# Rails Bootstrap Form Builder 
 
 **Rails Bootstrap Form Builder** is a rails form builder that makes it easy to create Bootstrap 4+ forms into your rails application.
 
