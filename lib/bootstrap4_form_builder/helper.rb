@@ -7,15 +7,7 @@ module Bootstrap4FormBuilder
       options[:html] ||= {}
       options[:html][:role] ||= "form"
       
-      #Done in Builder
-      # if options[:layout] == :inline
-      #   options[:html][:class] = [options[:html][:class], "form-inline"].compact.join(" ")
-      # end
-      
-      #Done in Builder
-      #temporarily_disable_field_error_proc do
-        form_for(object, options, &block)
-      #end
+      form_for(object, options, &block)
     end
     
     
