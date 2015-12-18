@@ -10,22 +10,22 @@ class Bootstrap4FormErrorTest < ActionView::TestCase
   end
   
   test "text_field with errors is wrapped correctly" do
-    expected = %{<div class="form-group field-with-errors"><label class="form-control-label label-error" for="user_name">Name</label><input class="form-control" type="text" name="user[name]" id="user_name" /><small class="text-muted error-text">can&#39;t be blank</small></div>}
+    expected = %{<div class="form-group field-with-errors"><label class="label-error" for="user_name">Name</label><input class="form-control" type="text" name="user[name]" id="user_name" /><small class="text-muted error-text">can&#39;t be blank</small></div>}
     assert_equal expected, @builder.text_field(:name)
   end
   
   test "text_field with errors includes inline-error-class" do
-    expected = %{<div class="form-group field-with-errors"><label class="form-control-label label-error" for="user_name">Name</label><input class="form-control" type="text" name="user[name]" id="user_name" /><small class="text-muted error-text col-sm-2">can&#39;t be blank</small></div>}
+    expected = %{<div class="form-group field-with-errors"><label class="label-error" for="user_name">Name</label><input class="form-control" type="text" name="user[name]" id="user_name" /><small class="text-muted error-text col-sm-2">can&#39;t be blank</small></div>}
     assert_equal expected, @inline_builder.text_field(:name)
   end
   
   test "email_field with errors is wrapped correctly" do
-    expected = %{<div class="form-group field-with-errors"><label class="form-control-label label-error" for="user_email">Email</label><input class="form-control" type="email" value="wrong" name="user[email]" id="user_email" /><small class="text-muted error-text">must have an @</small></div>}
+    expected = %{<div class="form-group field-with-errors"><label class="label-error" for="user_email">Email</label><input class="form-control" type="email" value="wrong" name="user[email]" id="user_email" /><small class="text-muted error-text">must have an @</small></div>}
     assert_equal expected, @builder.email_field(:email)
   end
   
   test "text_field with errors, without inline errors is wrapped correctly" do
-    expected = %{<div class="form-group field-with-errors"><label class="form-control-label label-error" for="user_name">Name</label><input class="form-control" type="text" name="user[name]" id="user_name" /></div>}
+    expected = %{<div class="form-group field-with-errors"><label class="label-error" for="user_name">Name</label><input class="form-control" type="text" name="user[name]" id="user_name" /></div>}
     assert_equal expected, @noninline_error_builder.text_field(:name)
   end
   
