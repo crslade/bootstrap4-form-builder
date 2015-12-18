@@ -181,7 +181,8 @@ module Bootstrap4FormBuilder
       def generate_label(name, *args)
         options = args.extract_options!
         label_class = options.delete(:label_class)
-        label_class = ["form-control-label", @label_col, label_class]
+        label_class = [@label_col, label_class]
+        label_class << "form-control-label" if gridded_form?
         label_class << hide_label_class if hide_label?(options)
         label_class << label_error_class if has_errors?(name)
         label_class = label_class.compact.join(" ")
